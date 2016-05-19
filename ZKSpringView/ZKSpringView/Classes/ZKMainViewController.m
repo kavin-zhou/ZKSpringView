@@ -7,6 +7,7 @@
 //
 
 #import "ZKMainViewController.h"
+#import "ZKJellyView.h"
 
 @interface ZKMainViewController ()
 
@@ -16,6 +17,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    ZKJellyView *jellyView = [[ZKJellyView alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    jellyView.backgroundColor = [UIColor whiteColor];
+    
+    [self.view addSubview:jellyView];
+    
     // Do any additional setup after loading the view from its nib.
 }
 
